@@ -1,0 +1,31 @@
+    /* Footer */
+    @import url('https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
+    #footer {
+        color: #ccc;
+    }
+
+    #footer * {
+        font-family: 'Monomaniac One', sans-serif;
+    }
+
+    #footer p {
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    #footer a {
+        list-style: none;
+        text-decoration: none;
+        color: inherit;
+        line-height: 1.1rem;
+    }
+
+    #footer a:hover {
+        font-size: 1.12rem;
+        transition: .3s all ease;
+    }
+
+    #footer .back_colour_prim {
+        background-color: #20665C;
+    }

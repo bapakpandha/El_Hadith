@@ -5,48 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanad</title>
+    <title>Sanad dan Matan | ElHadith</title>
 
+    <script src="../GlobalAssets/vendor/jquery/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="../Beranda/assets/vendor/fontAwesome/all.min.css">
-    <script src="../Beranda/assets/vendor/jquery/jquery-3.3.1.slim.min.js"></script>
-    <script src="../Beranda/assets/vendor/popper/popper.min.js"></script>
-    <link rel="stylesheet" href="../Beranda/assets/vendor/bootstrap/bootstrap.min.css">
-    <script src="../Beranda/assets/vendor/bootstrap/bootstrap.min.js"></script>
-    <!-- <link rel="stylesheet" href="../Beranda/assets/css/globalStylesheet.css"> -->
+    <script src="../GlobalAssets/js/load_vendor.js"></script>
 
 </head>
 
 <body class="pattern">
     <div class="container">
-        <header id="header_3" class="revert_container">
-            <div class="page-wrapper">
-                <div class="nav-wrapper">
-                    <nav class="navbar">
-                        <img class="" src="../Beranda/assets/imgd/logo.svg" alt="Company Logo">
-                        <div class="menu-toggle" id="mobile-menu">
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                            <span class="bar"></span>
-                        </div>
-                        <ul class="nav no-search">
-                            <li class="nav-item mx-md-4"><a href="#">Home</a></li>
-                            <li class="nav-item mx-md-4"><a href="#">Menu</a></li>
-                            <li class="nav-item mx-md-4"><a href="#">About Us</a></li>
-                            <!-- <li class="nav-item"><a href="#">Careers</a></li> -->
-                            <li class="nav-item mx-md-4"><a href="#">Contact</a></li>
-                            <i class="fas fa-search" id="search-icon"></i>
-                            <input class="search-input" type="text" placeholder="Search..">
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+        <section id="header">
+            <script>$("#header").load("../GlobalAssets/html/header.html")</script>
+        </section>
         <section id="sanad" style="margin-top: 7.2rem;">
-            <div class="row">
-                <div class="col-md-8 col-sm-12 col-xs-12 rounded-start sanad_main">
+            <div class="row shadow">
+                <div id="main_article" class="col-md-8 col-sm-12 col-xs-12 rounded-start sanad_main">
                     <div class="min-vh-100 mt-md-5 px-md-5 mt-4 px-4 text-center text-wrap">
                         <h2 id="judul" class="text-capitalize my-2">sanad dan matan</h2>
                         <div class="my-3">
@@ -125,253 +99,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-12 col-xs-12 rounded-end sidebar">
-                    <div class="mt-md-5 mt-4 px-3 text-justify text-wrap">
-                        <h4 class="fst-italic text-decoration-underline m-0">Artikel-artikel</h4>
-                        <p class="artikel">Referensi: Jurnal Living Hadis</p>
-                        <div class="py-2 artikel">
-                            <h5 class="m-0"><a href="">Drinking Ethics According to Hadith and Its Review Based on
-                                    Science</a></h5>
-                            <p class="mb-2">Faticha Sadiyah</p>
-                            <p class="sidebar_content mb-2">Segala aspek kehidupan manusia diatur oleh agama, baik
-                                yang berkaitan dengan ibadah dan muamalah kepada sesama. Terdapat banyak etika yang
-                                diatur oleh agama baik yang berhubungan dengan kebiasaan pribadi, kepada orang lain
-                                maupun kepada Allah. <span> <a href="">Baca selengkapnya...</a></span></p>
-                        </div>
-                        <div class="py-2 artikel">
-                            <h5 class="m-0"><a href="">Interpretation of the Meaning of Hadith about the Parable of the
-                                    Date-Palm Tree with A Muslims through the Tahlili Method</a></h5>
-                            <p class="mb-2">Alfi Salwa</p>
-                            <p class="sidebar_content mb-2">Pohon kurma dianggap sebagai pohon yang memiliki
-                                keistemewaan besar karena beberapa kelebihan yang dimilikinya. Dari segi fisik, kurma
-                                mampu bertahan di berbagai cuaca. Sedangkan dari sisi non fisik, kurma memiliki banyak
-                                manfaat, baik...<span><a href="">Baca selengkapnya...</a></span></p>
-                        </div>
-                        <div class="py-2 artikel">
-                            <h5 class="m-0"><a href="">The Study of Living Hadith on Reciting Surah Al-Waqi'ah Tradition
-                                    at Pesantren Tebuireng</a></h5>
-                            <p class="mb-2">Ananda Prayogi</p>
-                            <p class="sidebar_content mb-2">Tradisi keagamaan Islam di Indonesia yang dilakukan oleh
-                                sekelompok masyarakat Muslim idealnya memiliki legitimasi dari sumber hukum yang valid.
-                                Menariknya, kebanyakan dari mereka tidak memahami sepenuhnya akan sumber tersebut
-                                tetapi... <span><a href="">Baca selengkapnya...</a></span></p>
-                        </div>
-                        <div class="py-2 artikel">
-                            <h5 class="m-0"><a href="">Hadith Ahad and Its Argumentation in the Problem of Faith in the
-                                    Perspective of Muhammad Al-Ghazali</a></h5>
-                            <p class="mb-2">Amalia Rabiatul Adwiah</p>
-                            <p class="sidebar_content mb-2">Perbedaan pendapat para ulama salah satunya Muhammad
-                                Al-Ghazali dalam pendalian hadis ahad dan pernyatan terkait hadis Ahad tidak boleh
-                                dijadikan sandaran dalam urusan aqidah karena tidak bersifat qat'iyyah al thubut
-                                menimbulkan banyak keraguan...<span><a href="">Baca selengkapnya...</a></span></p>
-                            <div class="d-flex justify-content-end"><button class="btn btn-primary baca_lengkap">Baca
-                                    selengkapnya</button></div>
-                        </div>
-                        <div class="py-2 artikel">
-                            <h5 class="m-0"><a href="">Book of Hadith Index and its Significance in Hadith Research</a>
-                            </h5>
-                            <p class="mb-2">LATHIF RIFA'I</p>
-                            <p class="sidebar_content mb-2">Kajian ini membahas tentang perkembangan kitab indeks hadis
-                                sebagai salah satu bentuk kodifikasi hadis, baik dari aspek metode maupun sistematika
-                                penyusunannya. Penelitian ini termasuk dalam jenis penelitian kualitatif dengan
-                                menggunakan metode...<span><a href="">Baca selengkapnya...</a></span></p>
-                            <div class="d-flex justify-content-end"><button class="btn btn-primary baca_lengkap">Baca
-                                    selengkapnya</button></div>
-                        </div>
-                    </div>
-                    <div id="menu_pintasan"
-                        class="mt-md-5 mt-4 px-3 menu_pintasan back_colour menu_pintasan mt-4 mt-md-5 px-3 rounded text-dark d-none d-md-block">
-                        <div class="container">
-                            <div class="judul text-capitalize my-2 text-center py-3">
-                                <h3>Menu Pintasan</h3>
-                            </div>
-                            <ul class="list-group">
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/mh.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Musthalah al-Hadis</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/sm.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Sanad dan Matan</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/klas.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Klasifikasi</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/cab.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Cabang-Cabang</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/ktb.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Kitab-kitab</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/hhp.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Hadis-hadis Pilihan</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/LV.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Living Hadis</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/HH.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Hermeneutika Hadis</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li class="bg-transparent border-0 list-group-item ps-0">
-                                    <a href="">
-                                        <div class="d-flex flex-row justify-content-start my-3">
-                                            <div class="icon_container">
-                                                <img src="./assets/menu_pintasan_img/ART.png" class="" alt="">
-                                            </div>
-                                            <div class="align-self-center ps-4">
-                                                <h4 class="mb-0 fw-bold">Artikel-artikel</h4>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-
-    </section>
-    <section id="footer">
-        <section class="footers rounded-top pt-3 pb-3 back_colour_prim revert_container">
-            <div class="container px-md-5">
-                <div class="row justify-content-around gap-2">
-                    <div class="col-10 col-sm-10 col-md-4">
-                        <div class="footers-logo">
-                            <img src="./assets/footer-icon/elhadith.svg" alt="Logo" style="width:15rem;">
-                        </div>
-                        <div class="footers-info mt-3">
-                            <p class="mb-0">Jl. Karang Asem No.8, Karang Gayam, Caturtunggal, Kec. Depok, Kabupaten
-                                Sleman, Daerah
-                                Istimewa Yogyakarta 55281</p>
-                            <p>hijrahquarrantine@gmail.com</p>
-                        </div>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/"><i id="social-fb"
-                                    class="fa fa-facebook-square fa-2x social"></i></a>
-                            <a href="https://twitter.com/"><i id="social-tw"
-                                    class="fa fa-twitter-square fa-2x social"></i></a>
-                            <a href="https://plus.google.com/"><i id="social-gp"
-                                    class="fa fa-google-plus-square fa-2x social"></i></a>
-                            <a href="mailto:bootsnipp@gmail.com"><i id="social-em"
-                                    class="fa fa-envelope-square fa-2x social"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-10 justify-content-center row">
-                        <div class="col-12 border-bottom">
-                            <h3 class="mb-md-0">MENU PILIHAN</h3>
-                        </div>
-                        <div class="col-6 col-md-6 col-sm-6 mt-3">
-                            <h5>Ulumul Hadis</h5>
-                            <ul class="">
-                                <li><a href="maintenance.html">Musthalah Hadis</a></li>
-                                <li><a href="contact.html">Sanad dan Matan</a></li>
-                                <li><a href="about.html">Klasifikasi</a></li>
-                                <li><a href="about.html">Cabang-Cabang</a></li>
-                                <li><a href="about.html">Kitab-Kitab</a></li>
-                                <li><a href="about.html">Hadis-Hadis Pilihan</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-6 col-md-6 col-sm-6 mt-3">
-                            <h5>Kajian Hadis Pilihan</h5>
-                            <ul class="">
-                                <li><a href="maintenance.html">Living Hadis</a></li>
-                                <li><a href="contact.html">Hermeneutika Hadis</a></li>
-                                <li><a href="about.html">Artikel-Artikel</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="px-4 px-sm-0 col-10 col-sm-10 col-md-3 justify-content-center">
-                        <div class="col-12 border-bottom">
-                            <h3 class="mb-md-0">TENTANG KAMI</h3>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <h5><a href="">Profile</a></h5>
-                            <h5><a href="">Kontak</a></h5>
-                        </div>
-                    </div>
+                <div id="sidebar" class="">
+                    <script>$("#sidebar").load("../GlobalAssets/html/sidebar.html");</script>
+                    <script>$('#sidebar').addClass("col-md-4 col-sm-12 col-xs-12 rounded-end sidebar")</script>
                 </div>
             </div>
         </section>
-        <section class="copyright border">
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md-12">
-                        <p class="mb-0 text-muted">© 2023 Ajo El</p>
-                    </div>
-                </div>
-            </div>
+        <section id="footer">
+            <script>$("#footer").load("../GlobalAssets/html/footer.html");</script>
         </section>
-    </section>
     </div>
 </body>
+
+</html>

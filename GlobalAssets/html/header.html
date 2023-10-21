@@ -1,0 +1,38 @@
+<header id="header_3" class="revert_container shadow">
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <nav class="navbar">
+        <a href="/Home/"><img class="" src="../GlobalAssets/imgd/logo.svg" alt="Company Logo"></a>
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item mx-md-4"><a href="/Home/">Home</a></li>
+          <li class="nav-item mx-md-4"><a href="/Home/#Menu">Menu</a></li>
+          <li class="nav-item mx-md-4"><a href="#">About Us</a></li>
+          <!-- <li class="nav-item"><a href="#">Careers</a></li> -->
+          <li class="nav-item mx-md-4"><a href="#">Contact</a></li>
+          <i class="icon-search" id="search-icon"></i>
+          <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<script>
+$('head').append('<link rel="stylesheet" type="text/css" href="../GlobalAssets/css/header.css">');
+</script>
+
+<script>$("#search-icon").click(function () {
+    $(".nav").toggleClass("search");
+    $(".nav").toggleClass("no-search");
+    $(".search-input").toggleClass("search-active");
+  });
+
+  $('.menu-toggle').click(function () {
+    $(".nav").toggleClass("mobile-nav");
+    $(this).toggleClass("is-active");
+  });</script>
