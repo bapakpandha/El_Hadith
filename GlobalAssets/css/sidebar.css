@@ -58,7 +58,7 @@
     }
 
     #menu_pintasan li>a>div:hover {
-        transform: scale(1) translateX(-1.5rem);
+        transform: scale(0.85) translateX(-2rem);
         transition: .3s all ease;
     }
 
