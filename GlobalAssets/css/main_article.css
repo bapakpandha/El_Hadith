@@ -103,6 +103,25 @@
     font-weight: bold;
 }
 
+#sanad .nk {
+    counter-reset: item;
+}
+
+#sanad .content-list-level-nk {
+    font-family: 'K2D', sans-serif;
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    list-style-type: decimal;
+    font-weight: normal;
+    display: block;
+}
+
+#sanad .content-list-level-nk::before {
+    content: counter(item) ") ";
+    counter-increment: item;
+}
+
 .subtitle {
     margin-left: calc((var(--bs-gutter-x) * -.5) - 1.5rem);
     background-color: #2A6D63;
@@ -119,9 +138,10 @@
 }
 
 /* Circle Penunjuk Halaman */
-#indikator_halaman a{
-text-decoration: none;
+#indikator_halaman a {
+    text-decoration: none;
 }
+
 .circle {
     background-color: white;
     margin: 5px;
@@ -133,8 +153,11 @@ text-decoration: none;
     line-height: 2.5rem;
     border-radius: 50%;
     transition: 0.3s;
+    text-align: center;
 }
-.circle:hover, .circle.active{
+
+.circle:hover,
+.circle.active {
     color: white;
     background-color: #20665C;
 }
