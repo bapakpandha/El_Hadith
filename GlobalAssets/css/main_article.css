@@ -102,7 +102,13 @@
     list-style-type: lower-latin;
     font-weight: bold;
 }
-
+#sanad .content-list-level-ll-normal {
+    font-family: 'K2D', sans-serif;
+    text-align: justify;
+    font-size: 1.25rem;
+    list-style-type: lower-latin;
+    font-weight: normal;
+}
 #sanad .nk {
     counter-reset: item;
 }
