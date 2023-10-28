@@ -117,3 +117,24 @@
         margin-left: calc((var(--bs-gutter-x) * -.5) - 3rem);
     }
 }
+
+/* Circle Penunjuk Halaman */
+#indikator_halaman a{
+text-decoration: none;
+}
+.circle {
+    background-color: white;
+    margin: 5px;
+    font-family: 'Nunito Sans', 'K2D';
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #20665C;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.circle:hover, .circle.active{
+    color: white;
+    background-color: #20665C;
+}
