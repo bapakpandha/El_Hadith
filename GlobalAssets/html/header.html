@@ -10,9 +10,66 @@
         </div>
         <ul class="nav no-search">
           <li class="nav-item mx-md-4"><a href="/Home/">Home</a></li>
-          <li class="nav-item mx-md-4"><a href="/Home/#Menu">Menu</a></li>
+          <!-- <li class="nav-item mx-md-4"><a href="/Home/#Menu">Menu</a></li> -->
+          <li class="nav-item mx-md-4 dropdown mega-dropdown open">
+            <a href="#" class="" data-toggle="dropdown" aria-expanded="true">Menu <span class="caret"></span></a>
+            <div class="dropdown-menu mega-dropdown-menu">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <h4 class="under-line text-center text-md-start">
+                      Ulumul Hadis
+                    </h4>
+                    <div class="row">
+                      <ul class="text-center text-md-start col-lg-6 col-md-6 col-sm-12 short-menu">
+                        <li><a href="#" title="Musthalah Al-Hadits">Musthalah Al-Hadits</a></li>
+                        <li><a href="#" title="Sanad dan Matan">Sanad dan Matan</a></li>
+                        <li><a href="#" title="Klasifikasi">Klasifikasi</a></li>
+                      </ul>
+                      <ul class="text-center text-md-start col-lg-6 col-md-6 col-sm-12 short-menu">
+                        <li><a href="#" title="Cabang-Cabang">Cabang-Cabang</a></li>
+                        <li><a href="#" title="Kitab-kitab">Kitab-kitab</a></li>
+                        <li><a href="#" title="Hadis-Hadis Pilihan">Hadis-Hadis Pilihan</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <h4 class="under-line text-center text-md-start">
+                      Kajian Hadis Kekinian
+                    </h4>
+                    <div class="row">
+                      <ul class="text-center text-md-start short-menu">
+                        <li><a href="#">Living Hadis</a></li>
+                        <li><a href="#">Hermeneutika Hadis</a></li>
+                        <li><a href="#">Artikel-Artikel</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <script>$(function () {
+              $(window).width() > 767 && ($(".dropdown").hover(function () {
+                1 != $(this).hasClass("dropdown-not-auto") && ($(".dropdown-menu", this).stop(!0, !0).fadeIn("fast"),
+                  $(this).toggleClass("open"),
+                  $("span", this).toggleClass("caret caret-up"))
+              }, function () {
+                1 != $(this).hasClass("dropdown-not-auto") && ($(".dropdown-menu", this).stop(!0, !0).fadeOut("fast"),
+                  $(this).toggleClass("open"),
+                  $("span", this).toggleClass("caret caret-up"))
+              }),
+                $("header .navbar .logo").hover(function () {
+                  var a = $("header .navbar .logo .slogan");
+                  a.data("initialText", a.text()),
+                    a.html('<i class="fa fa-angle-left" aria-hidden="true"></i> Click to return home page')
+                }, function () {
+                  var a = $("header .navbar .logo .slogan");
+                  a.html(a.data("initialText"))
+                }))
+            })</script>
           <li class="nav-item mx-md-4"><a href="#">About Us</a></li>
-          <!-- <li class="nav-item"><a href="#">Careers</a></li> -->
           <li class="nav-item mx-md-4"><a href="#">Contact</a></li>
           <i class="icon-search" id="search-icon"></i>
           <input class="search-input" type="text" placeholder="Search..">
@@ -23,7 +80,7 @@
 </header>
 
 <script>
-$('head').append('<link rel="stylesheet" type="text/css" href="/GlobalAssets/css/header.css">');
+  $('head').append('<link rel="stylesheet" type="text/css" href="/GlobalAssets/css/header.css">');
 </script>
 
 <script>$("#search-icon").click(function () {

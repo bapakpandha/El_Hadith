@@ -79,7 +79,7 @@ header {
   grid-template-columns: 1fr 3fr;
   align-items: center;
   height: 5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #header_3 .navbar img {
@@ -89,7 +89,7 @@ header {
   margin-left: 20px;
 }
 
-#header_3 .navbar ul {
+#header_3 .navbar ul.nav {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -322,7 +322,7 @@ header {
     /* MOBILE NAVIGATION */
   }
 
-  #header_3 .navbar ul {
+  #header_3 .navbar ul.nav {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -337,16 +337,17 @@ header {
     right: 0px;
   }
 
-  #header_3 .navbar li {
+  #header_3 .navbar li.nav-item {
     padding: 15px;
   }
 
-  #header_3 .navbar li:first-child {
+  #header_3 .navbar li.nav-item:first-child {
     margin-top: 50px;
   }
 
   #header_3 .navbar li a {
     font-size: 1rem;
+    text-decoration: none;
   }
 
   #header_3 .menu-toggle,
@@ -383,5 +384,119 @@ header {
 
   #header_3 .search-input {
     display: none;
+  }
+}
+
+
+/* PERCOBAAN MENU */
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.caret-up {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 4px solid;
+  display: inline-block;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+
+.dropdown-menu {
+  border-radius: 0 0 8px 8px;
+  top: 52px;
+  right: -300px;
+}
+
+.mega-dropdown-menu {
+  padding: 20px 15px 15px;
+  width: 600px;
+}
+
+.dropdown-menu:before {
+  content: url(/GlobalAssets/imgd/header/menu-toparrow.png);
+  position: absolute;
+  right: 300px;
+  top: -28px;
+  margin-left: -42px;
+}
+
+.mega-dropdown-menu .under-line {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.under-line {
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  color: #009688;
+  position: relative;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 2px solid;
+}
+
+.mega-dropdown-menu .short-menu li {
+  list-style-type: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mega-dropdown-menu .row .row li {
+  list-style-type: none;
+}
+
+header .nav>li a {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #212121;
+}
+
+.short-menu {
+  display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .mega-dropdown-menu {
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    right: 0px;
+    font-size: 1rem;
+  }
+
+  .dropdown-menu:before {
+    content: url(/GlobalAssets/imgd/header/menu-toparrow.png);
+    position: absolute;
+    top: -28px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 35px;
+    text-align: center;
+  }
+
+  .dropdown-menu h4 {
+    font-size: 1rem;
+  }
+  
+  .mega-dropdown-menu .short-menu li {
+    list-style-type: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
