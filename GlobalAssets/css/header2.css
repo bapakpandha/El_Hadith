@@ -322,7 +322,7 @@ header {
     /* MOBILE NAVIGATION */
   }
 
-  #header_3 .navbar ul.nav {
+  #header_3 .navbar ul {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -337,17 +337,16 @@ header {
     right: 0px;
   }
 
-  #header_3 .navbar li.nav-item {
+  #header_3 .navbar li {
     padding: 15px;
   }
 
-  #header_3 .navbar li.nav-item:first-child {
+  #header_3 .navbar li:first-child {
     margin-top: 50px;
   }
 
   #header_3 .navbar li a {
     font-size: 1rem;
-    text-decoration: none;
   }
 
   #header_3 .menu-toggle,
@@ -386,7 +385,6 @@ header {
     display: none;
   }
 }
-
 
 /* PERCOBAAN MENU */
 .caret {
@@ -493,7 +491,7 @@ header .nav>li a {
   .dropdown-menu h4 {
     font-size: 1rem;
   }
-  
+
   .mega-dropdown-menu .short-menu li {
     list-style-type: none;
     padding-top: 5px;

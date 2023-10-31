@@ -88,6 +88,15 @@
     list-style-type: decimal;
 }
 
+#sanad .content-list-level-decarab {
+    direction: rtl;
+    font-family: 'K2D', sans-serif;
+    text-align: justify;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    list-style-type: decimal;
+}
+
 #sanad .content-list-level-cir {
     list-style-type: disc;
     font-weight: normal;
@@ -102,6 +111,7 @@
     list-style-type: lower-latin;
     font-weight: bold;
 }
+
 #sanad .content-list-level-ll-normal {
     font-family: 'K2D', sans-serif;
     text-align: justify;
@@ -109,6 +119,7 @@
     list-style-type: lower-latin;
     font-weight: normal;
 }
+
 #sanad .nk {
     counter-reset: item;
 }
@@ -135,6 +146,22 @@
     color: white;
     border-bottom-right-radius: 2rem;
     border-top-right-radius: 2rem;
+}
+
+#sanad a.subtitle:hover{
+    color: #2A6D63;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#sanad a.subtitle.active{
+    color: #2A6D63;
+    background-color: white;
+    transition: 0.3s;
+}
+
+#sanad a.subtitle{
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) {

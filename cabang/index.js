@@ -1,27 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+function Home() {
 
-<head>
+    var variable = `
+    <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cabang Ilmu Hadits | ElHadith</title>
+    <title>Klasifikasi Hadits | ElHadith</title>
 
-    <script src="../GlobalAssets/vendor/jquery/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <script src="../GlobalAssets/js/load_vendor.js"></script>
+    <script src="/GlobalAssets/vendor/jquery/jquery.min.js"></script>
+    <link rel="stylesheet" href="/cabang/style.css">
+    <script src="/GlobalAssets/js/load_vendor.js"></script>
 
 </head>
 
 <body class="pattern">
     <div class="container-md">
         <section id="header">
-            <script>$("#header").load("../GlobalAssets/html/header.html")</script>
+            <script>$("#header").load("/GlobalAssets/html/header.html")</script>
         </section>
         <section id="sanad" style="margin-top: 7.2rem;">
             <div class="row shadow">
                 <div id="main_article" class="col-md-8 col-sm-12 col-xs-12 rounded-start sanad_main">
                     <div class="min-vh-100 mt-md-5 px-md-5 mt-4 px-4 text-center text-wrap">
+                        <div class="d-flex justify-content-around">
+                            <a href="/" class="d-block text-decoration-none col-3 fs-5 m-3 p-2 rounded-pill subtitle">
+                                lorem
+                            </a>
+                            <a href="/" class="d-block text-decoration-none col-3 fs-5 m-3 p-2 rounded-pill subtitle">
+                                lorem
+                            </a>
+                            <a href="/" class="d-block text-decoration-none col-3 fs-5 m-3 p-2 rounded-pill subtitle">
+                                lorem
+                            </a>
+                        </div>
                         <h2 id="judul" class="text-capitalize my-2">Cabang Ilmu Hadits</h2>
                         <p class="content">
                             Dari dua pokok dasar ‘Ulūm al-Hadīs (riwāyah dan dirāyah), kemudian muncullah bermacam-macam
@@ -135,15 +146,53 @@
                 </div>
 
                 <div id="sidebar" class="">
-                    <script>$("#sidebar").load("../GlobalAssets/html/sidebar.html");</script>
+                    <script>$("#sidebar").load("/GlobalAssets/html/sidebar.html");</script>
                     <script>$('#sidebar').addClass("col-md-4 col-sm-12 col-xs-12 rounded-end sidebar")</script>
                 </div>
             </div>
         </section>
         <section id="footer">
-            <script>$("#footer").load("../GlobalAssets/html/footer.html");</script>
+            <script>$("#footer").load("/GlobalAssets/html/footer.html");</script>
         </section>
     </div>
 </body>
 
-</html>
+    `;
+    var lokasi = document.querySelector('html');
+    lokasi.innerHTML = variable;
+
+}
+
+Home();
+
+function nodeScriptReplace(node) {
+    if (nodeScriptIs(node) === true) {
+        node.parentNode.replaceChild(nodeScriptClone(node), node);
+    }
+    else {
+        var i = -1, children = node.childNodes;
+        while (++i < children.length) {
+            nodeScriptReplace(children[i]);
+        }
+    }
+    return node;
+}
+function nodeScriptClone(node) {
+    var script = document.createElement("script");
+    script.text = node.innerHTML;
+
+    var i = -1, attrs = node.attributes, attr;
+    while (++i < attrs.length) {
+        script.setAttribute((attr = attrs[i]).name, attr.value);
+    }
+    return script;
+}
+
+function nodeScriptIs(node) {
+    return node.tagName === 'SCRIPT';
+}
+
+nodeScriptReplace(document.getElementsByTagName("head")[0]);
+window.onload = function() {
+    nodeScriptReplace(document.getElementsByTagName("body")[0]);
+  }
